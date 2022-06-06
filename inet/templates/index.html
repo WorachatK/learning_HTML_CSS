@@ -1,0 +1,98 @@
+<html>
+<head>
+    
+<link rel="stylesheet" href="/static/style.css">  <!-- เชื่อมโยงกับไฟล์ style.css -->
+<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css" media="all">
+
+</head>
+<body>
+
+    <!-- header section start -->
+    <header class="header">
+        <div class="container">
+            <div class="row flexbox-center">
+                <div class="col-lg-2 col-md-3 col-6">
+                    <div class="logo">
+                        <a href="#home">
+                            <img src="https://www.inet.co.th/assets/img/logo.png" alt="logo">
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="col-lg-10 col-md-9 col-6">
+                    <div class="mainmenu">
+                        <ul id="primary-menu">
+                            <!--<li><a class="nav-link active" href="#home">Home</a></li>-->
+                            <li><a class="nav-link" href="about.php">ABOUT INET</a></li>
+                            <li><a class="nav-link" href="services.php">SERVICES</a></li>
+                            <li><a class="nav-link" href="news.php">NEWS</a></li>
+                            <li><a class="nav-link" href="http://ir.inet.co.th" target="_blank">INVESTOR RELATIONS</a></li>
+                            <li><a class="nav-link" href="contact.php?sub=howto">CAREERS</a></li>
+                            <li><a class="nav-link" href="contact.php">CONTACT US</a></li>
+                            <li><a class="lang-btn" href="?lang=en">TH</a></li>       
+                        </ul>
+                    </div>
+                </div>   
+            </div>
+        </div>
+    </header>
+    <!-- header section end -->
+
+    <!-- hero area start -->
+    <section class="hero-area hero-home">
+        <div class="hero-area-slider">
+            <div class="owl-stage-outer">
+                <div class="container">
+                    <div class="row">
+
+                        <div class="text-slider">
+
+                            <div class="text-slider-box">
+                                <h1>INET One Platform</h1>
+                                <p>เราคือผู้นำและผู้พัฒนานวัตกรรมทางเทคโนโลยี เพื่อตอบโจทย์ทุกความต้องการของลูกค้าในยุค Thailand 4.0 ด้วยแพลตฟอร์มที่หลากหลาย รองรับเทคโนโลยีด้านต่าง ๆ เช่น การบริหารจัดการ, การเงิน, การเกษตร, การแพทย์, การออกใบกำกับภาษีอิเล็กทรอนิกส์ และบริการอื่น ๆ อีกมากมาย การันตีด้วยมาตรฐานระดับสากลภายใต้ชื่อ INET One Platform</p>
+                            </div>
+
+                            <div class="text-slider-box">
+                                <h1>Trusted Provider</h1>
+                                <p>ไอเน็ต คือผู้ให้บริการโครงสร้างพื้นฐานด้านไอซีทีแบบครบวงจรสำหรับธุรกิจ และผู้ที่ต้องการนำไอซีทีมาเป็นเครื่องมือเพื่อเสริมสร้างความสามารถในการแข่งขันทางธุรกิจ</p>
+                                <br>
+                                <p>บริการของบริษัทครอบคลุมตั้งแต่บริการ Cloud Solutions บริการเชื่อมต่อเครือข่ายอินเทอร์เน็ตเต็มรูปแบบ และการให้บริการศูนย์ปฏิบัติการข้อมูลไอเน็ต (INET-IDC) สำหรับผู้ที่ต้องการบริการที่มีประสิทธิภาพในมาตรฐานสากล</p>
+                            </div>
+
+                            <script>
+                                var slideIndex = 0;
+                                carousel();
+                                
+                                function carousel() {
+                                    var i;
+                                    var x = document.getElementsByClassName("text-slider-box");
+                                    for (i = 0; i < x.length; i++) {
+                                      x[i].style.display = "none"; 
+                                    }
+                                    slideIndex++;
+                                    if (slideIndex > x.length) {slideIndex = 1} 
+                                    x[slideIndex-1].style.display = "block"; 
+                                    setTimeout(carousel, 3000); 
+                                }
+                            </script>
+                        </div>
+
+                        <div class="pic-slider">
+                            <div class="pic-slider-box">
+                                <img class="slidepic" src="https://www.inet.co.th/assets/img/slide2.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="slide-pic">
+
+            </div>
+        </div>
+
+    </section>
+    <!-- hero area end -->
+
+</body>
+</html>

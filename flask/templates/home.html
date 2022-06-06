@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shizuoka Green Tea</title>
+
+    <link rel="stylesheet" href="style.css">
+    <!-- <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='style.css')}}"> -->
+    <link href="https://vjs.zencdn.net/7.0.3/video-js.css" rel="stylesheet">
+
+</head>
+<body>
+
+    <div class="container-fluid container-body">
+        <div class="container container-full">
+            <div class="block-header-socail">
+                <div class="container">
+                    <div class="nav navbar-nav">
+
+                        <li class="">
+                            <a href="https://www.facebook.com/ShizuokaTH/" target="_blank"><img src="http://www.ichitandrink.com/shizuoka/img/fb.png"></a>
+                        </li>
+                        <li class="">
+                            <a href="https://twitter.com/ShizuokaTH" target="_blank"><img src="http://www.ichitandrink.com/shizuoka/img/tw.png"></a>
+                        </li>
+                        <li class="">
+                            <a href="https://www.instagram.com/shizuokath/" target="_blank"><img src="http://www.ichitandrink.com/shizuoka/img/ig.png"></a>
+                        </li>
+                        <li class="">
+                            <a href="https://www.youtube.com/channel/UCE1NO4K6NSVQlErzungqWOQ?view_as=subscriber" target="_blank"><img src="http://www.ichitandrink.com/shizuoka/img/youtube.png"></a>
+                        </li>
+                        
+                    </div>
+                </div>
+            </div>
+            
+            <div class="block-cover">
+                <div class="w3-content w3-display-container">
+                    <img class="mySlides" src="http://www.ichitandrink.com/shizuoka/img/banner_1.jpg">
+                    <img class="mySlides" src="http://www.ichitandrink.com/shizuoka/img/banner_2.jpg">
+                    <img class="mySlides" src="http://www.ichitandrink.com/shizuoka/img/banner_3.jpg">  
+                </div>
+            </div>
+
+            <script>
+                var myIndex = 0;
+                carousel();
+                
+                function carousel() {
+                    var i;
+                    var x = document.getElementsByClassName("mySlides");
+                    for (i = 0; i < x.length; i++) {
+                       x[i].style.display = "none";  
+                    }
+                    myIndex++;
+                    if (myIndex > x.length) {myIndex = 1}    
+                    x[myIndex-1].style.display = "block";  
+                    setTimeout(carousel, 5000); // Change image every 2 seconds
+                }
+            </script>
+                
+        </div>
+
+        <!-- <nav class="navbar navbar-default">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        
+                        <img src="http://www.ichitandrink.com/shizuoka/img/m_hur.png">
+                    </button>
+                    <a class="navbar-brand hidden-xs" href="index.php" id="btnlogo"><img src="http://www.ichitandrink.com/shizuoka/img/logo.png"></a>
+                    <a class="navbar-brand hidden-sm hidden-md hidden-lg" href="index.php" id="btnlogomobile" style="display:block;text-align:center;">
+                        <img src="http://www.ichitandrink.com/shizuoka/img/log.svg" width="154" class="img-center" style="margin-top:0;margin-left:0%;">
+                    </a>
+                </div>
+                <div id="navbar" class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+                        <li class=""><a href="about.php">About Shizuoka</a></li>
+                        <li class=""><a href="shizuokabyichitan.php">Shizuoka Green Tea</a></li>
+                        <li class=""><a href="shizuokatoday.php">Shizuoka Today</a></li>
+                        <li class=""><a href="productlineup.php">Product line-up</a></li>
+                        <li class=""><a href="media.php">Media</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav> -->
+            
+    </div>
+
+</body>
+</html>

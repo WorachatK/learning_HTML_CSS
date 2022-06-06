@@ -1,0 +1,56 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    color: #000;
+    font-family: 'psl_siara_proregular';
+    font-size: 14px;
+    background-color: #eff1ed;
+    background-repeat: no-repeat;
+    background-position: center top;
+}
+
+.container-fluid {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    height: 1000px;
+}
+
+.container-full{
+    height: auto;
+}
+
+.block-header-socail {
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    height: auto;
+    margin-top: 0px;
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+.navbar-nav {
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+    padding-top: auto;
+}
+
+li {
+    display: inline-block;
+    float: none;
+    margin: 10px;
+}
+
+img {
+    height: 100%;
+    width: 100%;
+}
